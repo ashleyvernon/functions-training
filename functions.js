@@ -43,6 +43,12 @@ console.log(result);
 
 
 //********FUNCTION 5**********
+function pythagoreanTheorem(a, b) {
+    return Math.hypot(a, b);
+}
+
+var result = pythagoreanTheorem(3, 4);
+console.log(result);
 
 //********FUNCTION #6*********
 function isXEvenlyDivisibleByY(x, y) {
@@ -63,14 +69,31 @@ function countVowels(word) {
 
 var result = countVowels("stealing");
 console.log(result);
-// displays 3
 
 
 //********FUNCTION #8*********
+function findWdi(arr){
+    for(var i=0; i<arr.length; i++){
+        if(arr[i] === 'wdi'){
+            return true;
+        }
+	}
+    return false;
+}
+
+findWdi([9,'Bart Simpson', true, 'wdi']) // returns true
+findWdi(['a','b','c']) // returns false
+
 
 //********FUNCTION #9*********
+function printTriangle(length) {
+    for (var i = 1; i < length + 1; i++) {
+        console.log('*'.repeat(i)); 
+    } 
+}
 
-//********FUNCTION #10*********
+printTriangle(3);
+
 
 
 
